@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { Menu, Sign } from "./helpers";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -11,27 +12,11 @@ const Navbar = () => {
           <p>SELFOCUS</p>
         </div>
         <div className="gpt3__navbar-links_container">
-          <p>
-            <a href="#home">Home</a>
-          </p>
-          <p>
-            <a href="#selfocus">What is Selfocus?</a>
-          </p>
-          <p>
-            <a href="#features">Features</a>
-          </p>
-          <p>
-            <a href="#library">Library</a>
-          </p>
-          <p>
-            <a href="https://sendfox.com/lp/3l7v4l" target="_blank">
-              News
-            </a>
-          </p>
+          <Menu />
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <button type="button">GET EXTENSION</button>
+        <Sign />
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
@@ -42,26 +27,10 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="gpt3__navbar-menu_container scale-up-center">
             <div className="gpt3__navbar-menu_container-links">
-              <p>
-                <a href="#home">Home</a>
-              </p>
-              <p>
-                <a href="#selfocus">What is Selfocus?</a>
-              </p>
-              <p>
-                <a href="#features">Features</a>
-              </p>
-              <p>
-                <a href="#library">Library</a>
-              </p>
-              <p>
-                <a href="https://sendfox.com/lp/3l7v4l" target="_blank">
-                  News
-                </a>
-              </p>
+              <Menu />
             </div>
             <div className="gpt3__navbar-menu_container-links-sign">
-              <button type="button">GET EXTENSION</button>
+              <Sign />
             </div>
           </div>
         )}
