@@ -5,7 +5,7 @@ const navbar = () => {
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
-          <a href="#">SELFOCUS</a>
+          <p>SELFOCUS</p>
         </div>
         <div className="gpt3__navbar-links_container">
           <p>
