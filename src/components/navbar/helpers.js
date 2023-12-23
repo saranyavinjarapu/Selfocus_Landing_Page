@@ -16,7 +16,7 @@ export const Menu = () => (
       <a href="#home">Home</a>
     </p>
     <p>
-      <a href="#selfocus">What is Selfocus?</a>
+      <a href="#whatselfocus">What is Selfocus?</a>
     </p>
     <p>
       <a href="#features">Features</a>

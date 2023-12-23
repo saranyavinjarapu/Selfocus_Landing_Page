@@ -1,6 +1,6 @@
 import "./App.css";
 import { Navbar } from "./components";
-import { Header } from "./containers";
+import { Header, WhatSelfocus } from "./containers";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <Navbar />
         <Header />
       </div>
+      <WhatSelfocus />
     </div>
   );
 }
