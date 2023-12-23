@@ -6,30 +6,30 @@ import "./navbar.css";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className="gpt3__navbar">
-      <div className="gpt3__navbar-links">
-        <div className="gpt3__navbar-links_title">
+    <div className="selfocus__navbar">
+      <div className="selfocus__navbar-links">
+        <div className="selfocus__navbar-links_title">
           <p>SELFOCUS</p>
         </div>
-        <div className="gpt3__navbar-links_container">
+        <div className="selfocus__navbar-links_container">
           <Menu />
         </div>
       </div>
-      <div className="gpt3__navbar-sign">
+      <div className="selfocus__navbar-sign">
         <Sign />
       </div>
-      <div className="gpt3__navbar-menu">
+      <div className="selfocus__navbar-menu">
         {toggleMenu ? (
           <RiCloseLine size={27} onClick={() => setToggleMenu(false)} />
         ) : (
           <RiMenu3Line size={27} onClick={() => setToggleMenu(true)} />
         )}
         {toggleMenu && (
-          <div className="gpt3__navbar-menu_container scale-up-center">
-            <div className="gpt3__navbar-menu_container-links">
+          <div className="selfocus__navbar-menu_container scale-up-center">
+            <div className="selfocus__navbar-menu_container-links">
               <Menu />
             </div>
-            <div className="gpt3__navbar-menu_container-links-sign">
+            <div className="selfocus__navbar-menu_container-links-sign">
               <Sign />
             </div>
           </div>
