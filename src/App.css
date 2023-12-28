@@ -50,7 +50,7 @@ a {
   background: linear-gradient(
     45deg,
     rgba(57, 175, 163, 1) 0%,
-    rgba(250, 251, 219, 1) 100%
+    rgb(250, 251, 219) 100%
   );
 }
 
