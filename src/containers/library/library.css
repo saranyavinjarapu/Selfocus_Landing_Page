@@ -1,0 +1,84 @@
+.selfocus__library {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.selfocus__library-feature {
+  display: flex;
+}
+
+/* Customizing feature component as per needs */
+.selfocus__library-feature .selfocus__features-container__feature {
+  margin: 0;
+}
+
+.selfocus__library-feature .selfocus__features-container_feature-text p {
+  color: #000;
+}
+
+.selfocus__library-container .selfocus__features-container_feature-text p {
+  color: #000;
+}
+
+.selfocus__library-feature .selfocus__features-container__feature-title h1 {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.selfocus__library-container .selfocus__features-container__feature-title h1 {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Customizing feature component as per needs */
+.selfocus__library-feature .selfocus__features-container_feature-text {
+  max-width: 700px;
+}
+
+.selfocus__library-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.selfocus__library-container .selfocus__features-container__feature {
+  flex: 1;
+  margin: 1rem;
+  min-width: 210px;
+  display: unset;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 25%;
+}
+
+/* Customizing feature component as per needs */
+.selfocus__library-container .selfocus__features-container_feature-text {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 650px) {
+  /* Customizing feature component as per needs */
+  .selfocus__library-feature .selfocus__features-container__feature {
+    flex-direction: column;
+  }
+
+  /* Customizing feature component as per needs */
+  .selfocus__library-feature .selfocus__features-container_feature-text {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  /* Customizing feature component as per needs */
+  .selfocus__library-container .selfocus__features-container__feature {
+    margin: 1rem 1rem;
+    min-width: 100%;
+  }
+}
