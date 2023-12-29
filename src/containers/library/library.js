@@ -1,6 +1,6 @@
 import React from "react";
 import { Feature } from "../../components";
-import "./possibility.css";
+import "./library.css";
 import NewTab from "../../assets/new_tab.svg";
 import Design from "../../assets/design.svg";
 import Goals from "../../assets/goals.svg";
@@ -8,7 +8,7 @@ import Session from "../../assets/session.svg";
 import Block from "../../assets/block.svg";
 import Background from "../../assets/background.svg";
 
-const possibilityData = [
+const libraryData = [
   {
     title: "New-tab dashboard",
     text: "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.",
@@ -47,21 +47,18 @@ const possibilityData = [
   },
 ];
 
-const possibility = () => {
+const library = () => {
   return (
-    <div
-      className="selfocus__possibilities section__margin "
-      id="possibilities"
-    >
-      <div className="selfocus__possibilities-possibility ">
+    <div className="selfocus__library section__margin " id="library">
+      <div className="selfocus__library-feature ">
         <Feature
           title="Library"
           text="Launched in Chrome Extensions, Productivity, Task Management. Our inspiring nature backgrounds and Zen music keep you calm and focused. These methods are scientifically proven to be efficient in increasing your focus and productivity while reducing stress"
         />
       </div>
 
-      <div className="selfocus__possibilities-container">
-        {possibilityData.map((item, index) => (
+      <div className="selfocus__library-container">
+        {libraryData.map((item, index) => (
           <Feature
             title={item.title}
             text={item.text}
@@ -75,4 +72,4 @@ const possibility = () => {
   );
 };
 
-export default possibility;
+export default library;
