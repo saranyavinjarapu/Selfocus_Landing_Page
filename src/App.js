@@ -1,5 +1,5 @@
 import "./App.css";
-import { Navbar } from "./components";
+import { Navbar, Cta } from "./components";
 import { Header, WhatSelfocus, Features, Library, Footer } from "./containers";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       <WhatSelfocus />
       <Library />
       <Features />
+      <Cta />
       <Footer />
     </div>
   );
