@@ -26,6 +26,12 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 1rem;
+}
+
+.selfocus__navbar-sign_status img {
+  height: 2.7rem;
+  vertical-align: middle;
 }
 
 .selfocus__navbar-links_container p,
@@ -121,5 +127,9 @@
 
   .selfocus__navbar-menu_container-links-sign {
     display: block;
+  }
+  .selfocus__navbar-menu_container-links-sign img {
+    margin-top: 1.2rem;
+    margin-bottom: 0.7rem;
   }
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { Menu, Sign } from "./helpers";
 import "./navbar.css";
+import featuresLogo from "../../assets/featured.svg";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -16,6 +17,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className="selfocus__navbar-sign">
+        <div className="selfocus__navbar-sign_status">
+          <img src={featuresLogo} alt="selfocus_product_hunt_status" />
+        </div>
         <Sign />
       </div>
       <div className="selfocus__navbar-menu">
@@ -30,6 +34,7 @@ const Navbar = () => {
               <Menu />
             </div>
             <div className="selfocus__navbar-menu_container-links-sign">
+              <img src={featuresLogo} alt="selfocus_product_hunt_status" />
               <Sign />
             </div>
           </div>
