@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .selfocus__footer-info {
@@ -14,10 +14,12 @@
 
 .selfocus__footer-info_logo {
   margin-right: 2rem;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0.5rem;
 }
 
 .selfocus__footer-info_logo img {
-  max-width: 100%;
   vertical-align: middle;
 }
 
@@ -48,7 +50,7 @@
   line-height: 1.5;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1050px) {
   .selfocus__footer {
     flex-direction: column;
     gap: 3rem;
