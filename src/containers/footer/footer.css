@@ -1,0 +1,48 @@
+.selfocus__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.selfocus__footer-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.selfocus__footer-info_logo {
+  margin-right: 2rem;
+}
+
+.selfocus__footer-info_logo img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.selfocus__footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.selfocus__footer-links_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.selfocus__footer-links_container p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.selfocus__footer-links_copyright {
+  color: #667085;
+  letter-spacing: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+}
