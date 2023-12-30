@@ -10,7 +10,11 @@
 
 /* Customizing feature component as per needs */
 .selfocus__library-feature .selfocus__features-container__feature {
-  margin: 0;
+  margin: 1rem;
+}
+.selfocus__library-feature .selfocus__features-container__feature-title h1 {
+  text-transform: uppercase;
+  font-size: 22px;
 }
 
 .selfocus__library-feature .selfocus__features-container_feature-text p {
@@ -26,6 +30,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 22px;
 }
 
 .selfocus__library-container .selfocus__features-container__feature-title h1 {
