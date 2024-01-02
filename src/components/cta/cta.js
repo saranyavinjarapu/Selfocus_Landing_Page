@@ -7,7 +7,6 @@ const Cta = () => {
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    console.log(emailRef.current.value);
     setEmailSubscription(true);
   };
   return (
