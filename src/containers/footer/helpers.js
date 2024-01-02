@@ -1,16 +1,16 @@
 export const FooterMenu = () => (
   <>
     <p>
-      <a href="#">Overview</a>
+      <a href="#home">Overview</a>
     </p>
     <p>
-      <a href="#">Feature</a>
+      <a href="#features">Feature</a>
     </p>
     <p>
-      <a href="#">Help</a>
+      <a href="#whatselfocus">Help</a>
     </p>
     <p>
-      <a href="#">Privacy</a>
+      <a href="#whatselfocus">Privacy</a>
     </p>
   </>
 );

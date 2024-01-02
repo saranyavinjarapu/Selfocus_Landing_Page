@@ -11,7 +11,6 @@
 .selfocus__cta-content {
   display: flex;
   flex-direction: column;
-
   text-align: left;
   color: #fff;
 }
@@ -30,12 +29,44 @@
   font-weight: 800;
 }
 
+.selfocus__cta-submission {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.selfocus__cta-submission a {
+  color: revert !important;
+  text-decoration: revert !important;
+}
+
+.selfocus__cta-submission h1 {
+  font-size: 22px;
+}
+
 .selfocus__cta-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 4rem;
+  gap: 1rem;
+  flex: 2 1;
+}
 
-  margin-left: 2rem;
+.selfocus__cta-btn input {
+  width: 100%;
+  min-height: 42px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 5px;
+  background: var(--color-footer);
+  border: 2px solid var(--color-footer);
+  padding: 0.3rem 1rem;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-radius: 0.5rem;
 }
 
 .selfocus__cta-btn button {
@@ -45,9 +76,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   border-radius: 2rem;
-
   border: none;
   outline: none;
   cursor: pointer;
@@ -58,7 +88,6 @@
   .selfocus__cta {
     flex-direction: column;
   }
-
   .selfocus__cta-btn {
     margin: 2rem 0 0;
   }
