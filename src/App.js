@@ -1,7 +1,7 @@
 import "./App.css";
 import { Navbar, Cta } from "./components";
 import { Header, WhatSelfocus, Features, Library, Footer } from "./containers";
-import { SnackbarProvider, enqueueSnackbar } from "notistack";
+import { SnackbarProvider } from "notistack";
 
 function App() {
   return (

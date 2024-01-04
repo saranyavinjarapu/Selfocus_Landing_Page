@@ -1,14 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "./cta.css";
+import { Formik, Form, Field } from "formik";
+import * as Yup from "yup";
+
+const SignupSchema = Yup.object().shape({
+  email: Yup.string().email("Invalid email").required("Required"),
+});
 
 const Cta = () => {
-  const emailRef = useRef(null);
   const [emailSubscription, setEmailSubscription] = useState(false);
-
-  const handleOnSubmit = (e) => {
-    e.preventDefault();
-    setEmailSubscription(true);
-  };
   return (
     <div className="selfocus__cta section__margin">
       <div className="selfocus__cta-content">
@@ -27,12 +27,33 @@ const Cta = () => {
           </p>
         </div>
       ) : (
-        <div className="selfocus__cta-btn">
-          <input type="email" ref={emailRef} placeholder="Your Email Address" />
-          <button type="button" onClick={handleOnSubmit}>
-            Get Started
-          </button>
-        </div>
+        <Formik
+          initialValues={{
+            email: "",
+          }}
+          validationSchema={SignupSchema}
+          onSubmit={(values) => {
+            console.log(values.email);
+            if (values.email) {
+              setEmailSubscription(true);
+            }
+          }}
+        >
+          {({ errors, touched }) => (
+            <Form className="selfocus__cta-btn">
+              <Field
+                className="selfocus__cta-btn_input"
+                name="email"
+                type="email"
+                placeholder="Your Email Address"
+              />
+              {errors.email && touched.email ? (
+                <div style={{ color: "red" }}>{errors.email}</div>
+              ) : null}
+              <button type="submit">Get Started</button>
+            </Form>
+          )}
+        </Formik>
       )}
     </div>
   );
