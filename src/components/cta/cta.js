@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import "./cta.css";
 import { Formik, Form, Field } from "formik";
-import * as Yup from "yup";
-
-const SignupSchema = Yup.object().shape({
-  email: Yup.string().email("Invalid email").required("Required"),
-});
+import { SignupSchema } from "../../utils/helpers";
 
 const Cta = () => {
   const [emailSubscription, setEmailSubscription] = useState(false);

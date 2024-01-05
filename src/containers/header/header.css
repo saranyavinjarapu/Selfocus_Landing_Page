@@ -34,9 +34,10 @@
   margin: 2rem 0 1rem;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
-.selfocus__header-content__input input {
+.selfocus__header-content__inputemail {
   flex: 2;
   width: 100%;
   min-height: 50px;
@@ -69,6 +70,7 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   text-transform: capitalize;
+  align-self: start;
 }
 
 .selfocus__header-content__people {
@@ -136,7 +138,7 @@
     margin: 0;
   }
 
-  .selfocus__header-content__input input,
+  .selfocus__header-content__inputemail,
   .selfocus__header-content__input button {
     font-size: 16px;
     line-height: 24px;
@@ -154,7 +156,7 @@
     line-height: 24px;
   }
 
-  .selfocus__header-content__input input,
+  .selfocus__header-content__inputemail,
   .selfocus__header-content__input button {
     font-size: 12px;
     line-height: 16px;
