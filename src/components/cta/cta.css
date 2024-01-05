@@ -47,7 +47,7 @@
 .selfocus__cta-btn {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 4rem;
   gap: 1rem;
   flex: 2 1;
@@ -63,27 +63,19 @@
   line-height: 5px;
   background: var(--color-footer);
   border: 2px solid var(--color-footer);
-  padding: 0.3rem 1rem;
+  padding: 0.1rem 1rem;
   outline: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-radius: 0.5rem;
 }
 
-.selfocus__cta-btn_inputemailinvalid {
-  width: 100%;
-  min-height: 42px;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 5px;
-  background: var(--color-footer);
-  border: 2px solid var(--color-footer);
-  padding: 0.3rem 1rem;
-  outline: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-radius: 0.5rem;
+.selfocus__cta-btn_error {
+  color: #000;
+  margin: 0.8rem 0.5rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: #cd104f;
 }
 
 .selfocus__cta-btn button {
@@ -94,7 +86,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  padding: 0.3rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 2rem;
   border: none;
   outline: none;

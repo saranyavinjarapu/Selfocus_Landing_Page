@@ -39,18 +39,28 @@ const Cta = () => {
             }
           }}
         >
-          {({ errors, touched }) => (
+          {({ errors, touched, handleSubmit }) => (
             <Form className="selfocus__cta-btn">
-              <Field
-                className="selfocus__cta-btn_input"
-                name="email"
-                type="email"
-                placeholder="Your Email Address"
-              />
-              {errors.email && touched.email ? (
-                <div style={{ color: "red" }}>{errors.email}</div>
-              ) : null}
-              <button type="submit">Get Started</button>
+              <div style={{ flex: 2 }}>
+                <Field
+                  className="selfocus__cta-btn_input"
+                  name="email"
+                  type="email"
+                  placeholder="Your Email Address"
+                />
+                {errors.email && touched.email ? (
+                  <div className="selfocus__cta-btn_error">{errors.email}</div>
+                ) : null}
+              </div>
+              <button
+                type="submit"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSubmit();
+                }}
+              >
+                Get Started
+              </button>
             </Form>
           )}
         </Formik>
