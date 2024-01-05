@@ -44,7 +44,7 @@
   font-size: 22px;
 }
 
-.selfocus__cta-btn {
+.selfocus__cta-signup {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -53,7 +53,7 @@
   flex: 2 1;
 }
 
-.selfocus__cta-btn_input {
+.selfocus__cta-signup_input {
   flex: 2;
   width: 100%;
   min-height: 42px;
@@ -68,9 +68,10 @@
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-radius: 0.5rem;
+  min-width: 150px;
 }
 
-.selfocus__cta-btn_error {
+.selfocus__cta-signup_error {
   color: #000;
   margin: 0.8rem 0.5rem;
   font-size: 20px;
@@ -78,7 +79,7 @@
   color: #cd104f;
 }
 
-.selfocus__cta-btn button {
+.selfocus__cta-signup button {
   flex: 1;
   background: #000;
   color: #fff;
@@ -98,7 +99,7 @@
   .selfocus__cta {
     flex-direction: column;
   }
-  .selfocus__cta-btn {
+  .selfocus__cta-signup {
     margin: 2rem 0 0;
   }
 }
@@ -114,7 +115,7 @@
     line-height: 32px;
   }
 
-  .selfocus__cta-btn button {
+  .selfocus__cta-signup button {
     font-size: 14px;
     line-height: 28px;
   }
