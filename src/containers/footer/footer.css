@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 6rem;
+  padding: 3rem 6rem;
   gap: 3rem;
 }
 
@@ -21,6 +21,12 @@
 
 .selfocus__footer-info_logo img {
   vertical-align: middle;
+  max-height: 2rem;
+}
+
+.selfocus__footer-info_status img {
+  vertical-align: middle;
+  max-height: 2.5rem;
 }
 
 .selfocus__footer-links {
