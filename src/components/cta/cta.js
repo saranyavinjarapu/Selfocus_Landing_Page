@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "./cta.css";
-import { Formik, Form, Field } from "formik";
-import { SignupSchema } from "../../utils/helpers";
+import { Signup } from "..";
 
 const Cta = () => {
   const [emailSubscription, setEmailSubscription] = useState(false);
+
+  const handleSignupSubmit = () => {
+    setEmailSubscription(true);
+  };
   return (
     <div className="selfocus__cta section__margin">
       <div className="selfocus__cta-content">
@@ -23,45 +26,7 @@ const Cta = () => {
           </p>
         </div>
       ) : (
-        <Formik
-          initialValues={{
-            email: "",
-          }}
-          validationSchema={SignupSchema}
-          onSubmit={(values) => {
-            console.log(values.email);
-            if (values.email) {
-              setEmailSubscription(true);
-            }
-          }}
-        >
-          {({ errors, touched, handleSubmit }) => (
-            <Form className="selfocus__cta-signup">
-              <div style={{ flex: 2 }}>
-                <Field
-                  className="selfocus__cta-signup_input"
-                  name="email"
-                  type="email"
-                  placeholder="Your Email Address"
-                />
-                {errors.email && touched.email ? (
-                  <div className="selfocus__cta-signup_error">
-                    {errors.email}
-                  </div>
-                ) : null}
-              </div>
-              <button
-                type="submit"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleSubmit();
-                }}
-              >
-                Get Started
-              </button>
-            </Form>
-          )}
-        </Formik>
+        <Signup handleSignupSubmit={handleSignupSubmit} />
       )}
     </div>
   );
