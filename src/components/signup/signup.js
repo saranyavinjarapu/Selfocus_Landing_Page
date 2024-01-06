@@ -18,16 +18,16 @@ const signup = (props) => {
       }}
     >
       {({ errors, touched, handleSubmit }) => (
-        <Form className="selfocus__cta-signup">
+        <Form className="selfocus__signup">
           <div style={{ flex: 2 }}>
             <Field
-              className="selfocus__cta-signup_input"
+              className="selfocus__signup_input"
               name="email"
               type="email"
               placeholder="Your Email Address"
             />
             {errors.email && touched.email ? (
-              <div className="selfocus__cta-signup_error">{errors.email}</div>
+              <div className="selfocus__signup_error">{errors.email}</div>
             ) : null}
           </div>
           <button
