@@ -25,10 +25,11 @@ const Header = () => {
             email: "",
           }}
           validationSchema={SignupSchema}
-          onSubmit={(values) => {
+          onSubmit={(values, { resetForm }) => {
             console.log(values.email);
             if (values.email) {
               enqueueSnackbar("Thank you for your submission !");
+              resetForm();
             }
           }}
         >

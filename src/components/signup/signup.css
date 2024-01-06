@@ -1,0 +1,63 @@
+.selfocus__cta-signup {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 4rem;
+  gap: 1rem;
+  flex: 2 1;
+}
+
+.selfocus__cta-signup_input {
+  flex: 2;
+  width: 100%;
+  min-height: 42px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 5px;
+  background: var(--color-footer);
+  border: 2px solid var(--color-footer);
+  padding: 0.1rem 1rem;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-radius: 0.5rem;
+  min-width: 150px;
+}
+
+.selfocus__cta-signup_error {
+  color: #000;
+  margin: 0.8rem 0.5rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: #cd104f;
+}
+
+.selfocus__cta-signup button {
+  flex: 1;
+  background: #000;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+@media screen and (max-width: 650px) {
+  .selfocus__cta-signup {
+    margin: 2rem 0 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .selfocus__cta-signup button {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
