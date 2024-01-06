@@ -23,7 +23,7 @@
   gap: 0px;
 }
 
-.selfocus__header-content .selfocus__signup_input {
+.selfocus__header-content .selfocus__signup-input {
   flex: 2;
   width: 100%;
   min-height: 50px;

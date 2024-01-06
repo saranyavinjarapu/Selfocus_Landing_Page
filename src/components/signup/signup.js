@@ -22,13 +22,13 @@ const signup = (props) => {
         <Form className="selfocus__signup">
           <div style={{ flex: 2 }}>
             <Field
-              className="selfocus__signup_input"
+              className="selfocus__signup-input"
               name="email"
               type="email"
               placeholder="Your Email Address"
             />
             {errors.email && touched.email ? (
-              <div className="selfocus__signup_error">{errors.email}</div>
+              <div className="selfocus__signup-error">{errors.email}</div>
             ) : null}
           </div>
           <button
