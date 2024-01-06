@@ -12,6 +12,46 @@
   margin-right: 5rem;
 }
 
+.selfocus__header-content .selfocus__signup {
+  flex: initial !important;
+  margin-left: initial;
+  width: 100%;
+  margin: 2rem 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px;
+}
+
+.selfocus__header-content .selfocus__signup_input {
+  flex: 2;
+  width: 100%;
+  min-height: 50px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: var(--color-footer);
+  border: 2px solid var(--color-footer);
+  padding: 0 1rem;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-radius: initial;
+  border-bottom-left-radius: 5px;
+}
+
+.selfocus__header-content .selfocus__signup button {
+  background: #ff4820;
+  border: 2px solid #ff4820;
+  border-bottom-right-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  cursor: pointer;
+  flex: 0.6 1;
+  font-size: 18px;
+  text-transform: capitalize;
+  border-radius: initial;
+}
+
 .selfocus__header-content h1 {
   font-family: var(--font-family);
   font-weight: 800;
@@ -27,50 +67,6 @@
   line-height: 28px;
   color: var(--color-text);
   margin-top: 1.5rem;
-}
-
-.selfocus__header-content__input {
-  width: 100%;
-  margin: 2rem 0 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.selfocus__header-content__inputemail {
-  flex: 2;
-  width: 100%;
-  min-height: 50px;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  background: var(--color-footer);
-  border: 2px solid var(--color-footer);
-  padding: 0 1rem;
-  outline: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.selfocus__header-content__input button {
-  flex: 0.6;
-  width: 100%;
-  min-height: 50px;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  background: #ff4820;
-  border: 2px solid #ff4820;
-  padding: 0 1rem;
-  color: #fff;
-  cursor: pointer;
-  outline: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  text-transform: capitalize;
-  align-self: start;
 }
 
 .selfocus__header-content__people {
@@ -137,12 +133,6 @@
   .selfocus__header-content__people p {
     margin: 0;
   }
-
-  .selfocus__header-content__inputemail,
-  .selfocus__header-content__input button {
-    font-size: 16px;
-    line-height: 24px;
-  }
 }
 
 @media screen and (max-width: 490px) {
@@ -154,11 +144,5 @@
   .selfocus__header-content p {
     font-size: 14px;
     line-height: 24px;
-  }
-
-  .selfocus__header-content__inputemail,
-  .selfocus__header-content__input button {
-    font-size: 12px;
-    line-height: 16px;
   }
 }

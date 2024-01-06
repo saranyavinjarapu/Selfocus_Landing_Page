@@ -10,10 +10,11 @@ const signup = (props) => {
         email: "",
       }}
       validationSchema={SignupSchema}
-      onSubmit={(values) => {
+      onSubmit={(values, { resetForm }) => {
         console.log(values.email);
         if (values.email) {
           props.handleSignupSubmit();
+          resetForm();
         }
       }}
     >

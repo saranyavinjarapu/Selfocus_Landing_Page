@@ -3,11 +3,13 @@ import people from "../../assets/people.png";
 import selfocusLogo from "../../assets/selfocus_logo_128.png";
 import "./header.css";
 import { useSnackbar } from "notistack";
-import { Formik, Form, Field } from "formik";
-import { SignupSchema } from "../../utils/helpers";
+import { Signup } from "../../components";
 
 const Header = () => {
   const { enqueueSnackbar } = useSnackbar();
+  const handleSignupSubmit = () => {
+    enqueueSnackbar("Thank you for your submission !");
+  };
   return (
     <div className="selfocus__header section__padding" id="home">
       <div className="selfocus__header-content">
@@ -20,46 +22,7 @@ const Header = () => {
           break sessions, create to-do lists, and block distracting websites.{" "}
         </p>
 
-        <Formik
-          initialValues={{
-            email: "",
-          }}
-          validationSchema={SignupSchema}
-          onSubmit={(values, { resetForm }) => {
-            console.log(values.email);
-            if (values.email) {
-              enqueueSnackbar("Thank you for your submission !");
-              resetForm();
-            }
-          }}
-        >
-          {({ errors, touched, handleSubmit }) => (
-            <Form className="selfocus__header-content__input">
-              <div style={{ flex: 2 }}>
-                <Field
-                  className="selfocus__header-content__inputemail"
-                  name="email"
-                  type="email"
-                  placeholder="Your Email Address"
-                />
-                {errors.email && touched.email ? (
-                  <div className="selfocus__cta-signup_error">
-                    {errors.email}
-                  </div>
-                ) : null}
-              </div>
-              <button
-                type="submit"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleSubmit();
-                }}
-              >
-                Get Started
-              </button>
-            </Form>
-          )}
-        </Formik>
+        <Signup handleSignupSubmit={handleSignupSubmit} />
 
         <div className="selfocus__header-content__people">
           <img src={people} alt="people_access" />
