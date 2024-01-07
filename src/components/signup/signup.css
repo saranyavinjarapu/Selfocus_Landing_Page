@@ -61,3 +61,10 @@
     line-height: 28px;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .selfocus__signup-input::-webkit-input-placeholder {
+    font-size: 0.8rem;
+    line-height: 28px;
+  }
+}

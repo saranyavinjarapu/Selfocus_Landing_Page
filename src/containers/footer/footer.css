@@ -54,11 +54,28 @@
   letter-spacing: normal;
   font-size: 1rem;
   line-height: 1.5;
+  display: flex;
+  flex: 1;
+  margin: 0;
 }
 
 @media screen and (max-width: 1050px) {
   .selfocus__footer {
     flex-direction: column;
     gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .selfocus__footer-links_container {
+    padding: 0rem 3rem;
+    margin: 2rem;
+    border: 2px solid yellow;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .selfocus__footer {
+    padding: 3rem 2rem;
   }
 }
