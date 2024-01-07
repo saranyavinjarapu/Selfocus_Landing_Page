@@ -61,6 +61,7 @@
   .selfocus__features-container_feature-text p {
     font-size: 12px;
     line-height: 20px;
+    margin-top: 1rem;
   }
 
   .selfocus__features-container__feature {
