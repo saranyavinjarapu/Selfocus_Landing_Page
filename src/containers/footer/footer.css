@@ -62,15 +62,14 @@
 @media screen and (max-width: 1050px) {
   .selfocus__footer {
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
   }
 }
 
 @media screen and (max-width: 650px) {
   .selfocus__footer-links_container {
     padding: 0rem 3rem;
-    margin: 2rem;
-    border: 2px solid yellow;
+    margin: 2rem 4rem;
   }
 }
 
